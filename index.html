@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PlayList Project!</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-    />
-    <!-- Your CSS -->
+    <title>RPS Game</title>
+    <!-- Link CSS here -->
     <link type="text/css" rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <h1>My Playlist</h1>
-    <div class="form">
-      <p>Add a new song:</p>
-      <input placeholder="Song Title" class="title" />
-      <input placeholder="Artist Name" class="artist" />
-      <input placeholder="Image URL" class="image" />
-      <input placeholder="Song Link Address" class="link" />
-      <button class="add">Add</button>
+    <div class="row">
+      <h1>Rock Paper Scissors</h1>
+      <img src="http://www.coltnews.com/wp-content/uploads/2016/04/RPS.png" />
+
+      <h3>Please Submit Your Choice Below</h3>
+      <div>
+        <input class="input" />
+        <button class="play">play!</button>
+      </div>
+
+      <div class="choices" class="row">
+        <div>
+          <h4>User Choice</h4>
+          <p class="userChoice"></p>
+        </div>
+        <div>
+          <h4>Computer Choice</h4>
+          <p class="computerChoice"></p>
+        </div>
+      </div>
+      <div class="result"></div>
     </div>
-    <div class="display">
-      <div class="column images"></div>
-      <div class="column songs"></div>
-      <div class="column artists"></div>
-      <div class="column lengths"></div>
-      <div class="column links"></div>
-    </div>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Your Javascript -->
+
+    <!-- Link JQuery here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Link script.js here -->
     <script src="js/script.js"></script>
   </body>
 </html>

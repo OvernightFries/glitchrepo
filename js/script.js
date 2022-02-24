@@ -1,29 +1,46 @@
-// Complete Day 1 goals here
+$(".play").click(function () {
+  let userInput = $(".input").val().toLowerCase();
+  $(".userChoice").text(userInput);
 
-function displaySongInfo() {
-  // Complete the Day 2 goals inside this function
-}
+  let computerChoice = "";
+  let randomNumber = Math.ceil(Math.random() * 3);
+  getRandomComputerChoice();
 
-function emptySongInfo() {
-  /* this function empties the divs each time the button is 
-  clicked so that your playlist does not repeatedly add the data
-  too many times. Try commenting out this function call to see 
-  what happens without it! */
-  $(".songs").empty();
-  $(".images").empty();
-  $(".artists").empty();
-  $(".lengths").empty();
-  $(".links").empty();
-}
+  function getRandomComputerChoice() {
+    if (randomNumber === 1) {
+      computerChoice = "scissors";
+    } else if (randomNumber === 2) {
+      computerChoice = "rock";
+    } else if (randomNumber === 3) {
+      computerChoice = "paper";
+    }
+    $(".computerChoice").text(computerChoice);
+    return computerChoice;
+  }
+  
+  chooseWinner(userInput, computerChoice);
+  function chooseWinner(userInput, computerChoice) {
+    if (
+      (userInput === "scissors" && computerChoice === "rock") ||
+      (userInput === "rock" && computerChoice === "paper") ||
+      (userInput === "paper" && computerChoice === "scissors")
+    ) {
+      return "Computer Wins";
+    } else if (
+      (userInput === "rock" && computerChoice === "scissors") ||
+      (userInput === "paper" && computerChoice === "rock") ||
+      (userInput === "scissors" && computerChoice === "paper")
+    ) {
+      return "User Wins";
+    } else if (userInput === computerChoice) {
+      return "It's a tie!";
+    } else {
+      $(".result").text("Please enter Rock, Paper, or Scissors. Thanks!");
+      $(".userChoice").text("");
+      $(".computerChoice").text("");
+    }
+  }
 
-function addSongInfo() {
-  // Complete Day 3 goals inside this function
-}
-
-$("#add").click(function () {
-  emptySongInfo();
-  addSongInfo();
-  displaySongInfo();
+  $(".result").text(chooseWinner(userInput, computerChoice));
+  $(".input").val("");
 });
-
-displaySongInfo();
