@@ -1,125 +1,118 @@
-# Rock Paper Scissors Project
+# Unit 1: Online Portfolio README
 
-## Overview:
+## Overview
 
-In this unit, coders will create a Rock, Paper, Scissors game. The Rock, Paper, Scissors game will take user choice, generate a computer choice, and display the winner to the screen. Then, coders will refactor their working project to add functions. To create this project, coders will use jQuery to take user input and display data, the Math Library to generate a random choice, and conditionals to determine the winner.
+In this unit, coders will review HTML and CSS concepts from the Introduction to Web Development course and build a multi-page professional Portfolio.
 
-## Day 1
+## Goal 1
 
-### Day 1 Goal 1: Set up
+### Set up
 
-#### Planning
+- [ ] Complete the [Project Planning Document](https://docs.google.com/document/d/19kWZMa_uTM0NtrArYVYxH0ozEx4P4U69hoXMJYVq4vY/edit). Make sure you have thought about how you want your portfolio to look and feel, and that you have finished the wireframe! 
 
-- [ ] Complete the project planning document
+- [x] Go to the repository.
 
-#### GitHub Set-Up
+- [ ] Fork this repository to your GitHub account.
 
-- [x] Go to the repository at https://github.com/itscodenation/rockpaperscissors
-- [ ] Fork this repository to your Github account and import to a new workspace
-- [ ] Link and commit your changes
-- [ ] Make your site live on GitHub Pages
+- [ ] Create a new project on Glitch that imports your repo from GitHub.
 
-#### Code Walkthrough
+- [ ] If there's time, start the Day 2 HTML and CSS tasks. 
 
-- [ ] Read through the starter code given so you understand how the HTML is organized
+## Goal 2
 
-### Day 1 Goal 2: Capture user input and display it to the screen
+### HTML
 
-- [ ] Add a click handler that saves the value of the user's input to a variable
-- [ ] Display the user input value on the screen, in the user choice location
+- [ ] Add a header with your name to your Portfolio homepage.
 
-#### Wrap
+- [ ] Update the title tag of both of your pages.
 
-- [ ] Commit your changes!
+- [ ] Create your navigation bar that will link all your pages together.
 
-## Day 2
+- [ ] Give your HTML elements classes in order to add Flexbox to the CSS.
 
-### Day 2 Goal 1: Generate a new random number every time the user clicks the button
+- [ ] Write your biography on your About Me page.
 
-- [ ] Outside of your click handler, declare a randomNumber variable and set it equal to 0
-- [ ] In your click handler, generate a random number and assign it to the randomNumber variable
+### CSS
 
-### Day 2 Goal 2: Display the random number to the screen
+- [ ] Choose 2-4 colors for your theme and add them as font or background colors.
 
-- [ ] Display the randomNumber value on the screen, in the computer choice location
+- [ ] Add flexbox to your navigation bar.
 
-#### Wrap
+- [ ] Add at least 1 Google Font.
 
-- [ ] Commit your changes!
+### Wrap
 
-## Day 3
+- [ ] If you finish early begin Day 3 tasks. 
+- [ ] Submit your work to the session agenda.
 
-### Day 3 Goal 1: Assign different computer choices depending on the random number
+## Goal 3
 
-- [ ] Write a conditional statement which, given the number range of randomNumber, assigns ‘rock’, ‘paper’ or ‘scissors’ to a computerChoice variable
-- [ ] Update the computer choice location so it displays the computerChoice to the screen
+### Set Up
 
-### Day 3 Goal 2: Increase user experience (BONUS!)
+- [ ] Link your homepage and About Me pages together using your nav bar.
 
-- [ ] Test for edge cases by ensuring that a result appears if the user does not type an acceptable input
+- [ ] Add two more HTML files (Projects, Contact) to your Portfolio and link them all together.
 
-## Day 4
+- [ ] Upload at least 2 images so they are hosted in your Portfolio.
 
-### Day 4 Goal 1: Compare the user choice and computer choice to determine a winner
+- [ ] Update the title tags of all your new HTML files.
 
-- [ ] Write a compound conditional statement that compares the userChoice to the computerChoice
-- [ ] Declare a variable to save the winner of the game
-- [ ] Display the winner to the screen in the result div
+- [ ] Link your CSS file to all of your HTML files.
 
-### Day 4 Goal 2: Increase user experience (BONUS!)
+### Wrap
 
-- [ ] Test that your game performs correctly in case of a tie
-- [ ] Clear the input value once a result is displayed so your game is ready to play again
+- [ ] If you have finished early, move on to the Day 4 tasks. 
+- [ ] Push your changes back to your GitHub repo!
 
-#### Wrap
+## Day 4 
 
-- [ ] Commit your changes!
+### Reflection
+- [ ] Go back to the rubric/checklist in your project plan. Check off all the tasks you have completed so far. 
 
-#### Day 5
 
-### Day 5 Goal 1: Create a function to handle your computer choice logic
+### HTML
 
-- [ ] Write a function called getRandomComputerChoice that does not accept any parameters and returns computerChoice
-- [ ] Move your `Math.random` inside your function
-- [ ] Move your conditional logic that determines the computer choice inside your function
+- [ ] Add a professional headshot of yourself.
 
-### Day 5 Goal 2: Call your getRandomComputerChoice function
+In your Projects page, create a display of at least 4 of your old coding projects that includes:
 
-- [ ] Call your function inside your click handler so that it determines the value of your computerChoice variable
-  - [ ] HINT: Your getRandomComputerChoice function works correctly if it returns rock, paper, or scissors when called
+    - [ ] Project name
+    - [ ] Link to project GitHub repo
+    - [ ] Link to project live site
+    - [ ] Short description of project including coding languages used
+    - [ ] Hosted screenshot of project
 
-#### Wrap
+Add your contact information to your Contact page, including your:
 
-- [ ] Commit your changes!
+    - [ ] GitHub account
+    - [ ] Email address
+    - [ ] LinkedIn
+    - [ ] Resume
 
-#### Day 6
+### CSS
 
-### Day 6 Goal 1: Create a function to handle your winner logic
+- [ ] Format the sizes of all your pictures
 
-- [ ] Write a function called chooseWinner that does accepts two parameters and returns winner
-- [ ] Move your compound conditional logic that determines the winner inside your function
+### Wrap
 
-### Day 6 Goal 2: Call your chooseWinner function
+- [ ] Push your changes back to your GitHub repo!
 
-- [ ] Call your function inside your click handler so that it determines the value of your winner variable
-  - [ ] HINT: Your chooseWinner function works correctly if it returns "User wins!", "Computer wins!" or "No one wins!" when called
 
-#### Wrap
+## Project Extensions (If you finish everything above early)
 
-- [ ] Commit your changes!
+- [ ] Style your nav bar so the links change color/style when your hover over them or when you click them.
 
-## Projects Extensions:
+- [ ] Add a unordered or ordered list of your accomplishments or favorite things to your About Me page.
 
-- [ ] Style the page to fit your personality
-- [ ] Validates input so that it will return “Not valid input” if the user types in a wrong choice.
-- [ ] Accepts any form of a word regardless of capitalization (i.e. “Rock” “rock” roCk”)
-- [ ] Keeps track of total wins and losses, until the page refreshes.
-- [ ] Create a game with more variety in throwing options. Example: [Rock-Paper-Scissors-Lizard-Spock](http://en.wikipedia.org/wiki/Rock-paper-scissors-lizard-Spock)
+- [ ] Make sure all your external links open up into new tabs.
+
+- [ ] Create a link that pops open the email browser with your email address in the to: field.
+
+- [ ] Arrange your Projects into a creative interactive or animated photo gallery or slideshow.
 
 ## References/Tools
 
-- [Code Nation Reference Table]()
-- [Script Tag](http://javascript.crockford.com/script.html)
-- [How Jquery Works](http://learn.jquery.com/about-jquery/how-jquery-works/)
-- [JQuery Events](http://api.jquery.com/category/events/)
-- [Math.random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+* [Fellowship Reference Table](https://docs.google.com/document/d/1qrY2OC-6S04oOXZlYmXja7lmKBmdApR-HXJkhfd67e8/edit)
+* [W3Schools] (https://www.w3schools.com/)
+* [MDN web docs] (https://developer.mozilla.org/en-US/)
+* [Introduction to Bootstrap] (https://getbootstrap.com/docs/4.1/getting-started/introduction/)
